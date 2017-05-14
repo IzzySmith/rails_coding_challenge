@@ -1,3 +1,28 @@
 <h1> Compare the Weather of Cities Around the World </h1>
 
-<p><%= @lookup %></p>
+<h4> Compare all cities </h4>
+
+<table class="CitiesTable">
+
+  <tr>
+    <th>City Name</th>
+    <th>Pressure</th>
+    <th>Temperature</th>
+    <th>Humidity</th>
+    <th>Percentage Cloud Cover</th>
+  </tr>
+
+
+<% @lookup.each do |l| %>
+  <tr>
+    <td><%= l["name"] %></td>
+    <td><%= l["main"]["pressure"] %></td>
+    <td><%= l["main"]["temp"] %></td>
+    <td><%= l["main"]["humidity"] %></td>
+    <td><%= l["clouds"]["all"] %></td>
+  </tr>
+<% end %>
+
+</table>
+
+
