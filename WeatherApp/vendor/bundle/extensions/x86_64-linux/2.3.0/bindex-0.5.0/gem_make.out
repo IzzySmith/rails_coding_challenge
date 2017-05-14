@@ -1,0 +1,15 @@
+current directory: /home/isobel/rails_coding_challenge/WeatherApp/vendor/bundle/gems/bindex-0.5.0/ext/bindex
+/usr/bin/ruby2.3 -r ./siteconf20170514-26276-dzneaj.rb extconf.rb
+creating Makefile
+
+current directory: /home/isobel/rails_coding_challenge/WeatherApp/vendor/bundle/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR=" clean
+
+current directory: /home/isobel/rails_coding_challenge/WeatherApp/vendor/bundle/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR="
+compiling cruby.c
+linking shared-object bindex/cruby.so
+
+current directory: /home/isobel/rails_coding_challenge/WeatherApp/vendor/bundle/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 cruby.so ./.gem.20170514-26276-m00lv9/bindex
