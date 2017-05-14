@@ -6,5 +6,6 @@ class WeatherController < ApplicationController
     @pressure = Weather.max_value(Weather.make_hash(@lookup, "pressure"))
     @humidity = Weather.min_value(Weather.make_hash(@lookup, "humidity"))
     @clouds = Weather.min_value(Weather.cloud_hash(@lookup))
+    @best = [@temp, @pressure, @humidity, @clouds]
   end
 end

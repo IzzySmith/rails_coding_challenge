@@ -1,3 +1,5 @@
+
+
 <h1> Compare the Weather of Cities Around the World </h1>
 
 <h4> Compare all cities </h4>
@@ -25,16 +27,23 @@
 
 </table>
 
-
 <h4> Best Weather </h4>
- <p>Best Temp</p>
- <p><%= @temp %></p>
 
- <p> Highest Pressure </p>
- <p><%= @pressure %></p>
 
- <p> Lowest Humidity </p>
- <p><%= @humidity %></p>
+<table class="CitiesTable">
+    <tr>Hottest Temperature</tr>
+    <tr>Highest Pressure</tr>
+    <tr>Lowest Humidity</tr>
+    <tr>Lowest Percentage Cloud Cover</tr>
 
- <p> Lowest Cloud Cover </p>
- <p><%= @clouds %></p>
+<% @best.each do |b| %>
+    <td><%= b[0] %></td>
+    <td><%= b[1] %></td>
+    <td><%= b[2] %></td>
+    <td><%= b[3] %></td>
+<% end %>
+</table>
+
+
+
+
