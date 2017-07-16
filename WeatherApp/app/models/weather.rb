@@ -43,4 +43,18 @@ class Weather
     hash.min_by{ |k,v| v}
   end    
 
+  #looks at the city name strings in the best weather group
+  #an array of hashes
+  def self.compare_city list
+    city_names = Array.new
+    list.each do |l|
+        #gets the zeroth element of the array
+        #extracts the city names
+        names = l[0]
+        city_names.push(names)
+    end
+    #return most occuring city name in group 
+    #need to add an exception here to check for no re-occuring values
+    return city_names.group_by(&:to_s).values.max_by(&:size).try(:first)
+  end 
 end  

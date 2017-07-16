@@ -7,5 +7,6 @@ class WeatherController < ApplicationController
     @humidity = Weather.min_value(Weather.make_hash(@lookup, "humidity"))
     @clouds = Weather.min_value(Weather.cloud_hash(@lookup))
     @best = [@temp, @pressure, @humidity, @clouds]
+    @recommend = Weather.compare_city(@best)
   end
 end

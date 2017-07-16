@@ -14,7 +14,6 @@
     <th>Percentage Cloud Cover</th>
   </tr>
 
-
 <% @lookup.each do |l| %>
   <tr>
     <td><%= l["name"] %></td>
@@ -43,6 +42,11 @@
     <td><%= b[3] %></td>
 <% end %>
 </table>
+
+<p><%= @recommend %></p>
+
+</body>
+</html>
 
 
 
