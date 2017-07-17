@@ -1,6 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Weather App</title>
+  <%= stylesheet_link_tag "style" %>
+  <%= javascript_include_tag "script" %>
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet"> 
+</head>
 
+<body>
 
-<h1> Compare the Weather of Cities Around the World </h1>
+<div class="header">
+  <div class="text-container">
+   <h1 class="title"> Compare the Weather of Cities Around the World </h1>
+   <a class="arrow" href="#section2"><span></span>&#9660;</a>
+  </div>
+</div>
+
+<section id="section2">
 
 <h4> Compare all cities </h4>
 
@@ -43,7 +59,10 @@
 <% end %>
 </table>
 
+<h4>Recommended city:</h4>
 <p><%= @recommend %></p>
+
+</section>
 
 </body>
 </html>
