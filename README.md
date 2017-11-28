@@ -1,5 +1,5 @@
 # rails_coding_challenge
-Weather comparison app 
+Weather comparison app in 3 hours
 
 A simple Rails application that compares the weather of 5 different cities. 
 
